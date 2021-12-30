@@ -5,7 +5,7 @@
     <title>네이버 지도 api 사용하기</title>
     <!--css-->
     <link rel="stylesheet" href="../static/css/style.css">
-    <!--네이버지도 스크립트-->
+    <!--네이버지도 Client ID 스크립트-->
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId={{CLIENT_ID}}"></script>
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,10 +14,20 @@
     <header>
         지도 가져오기
     </header>
-    <div id="map" style="width:50%;height:500px;"></div>
+    <div id="map"></div>
+    <div>
+        <button type="button" onclick="jeju()">제주도</button>
+        <button type="button" onclick="seoul()">서울</button>
+    </div>
+    <div>
+        <button type="button" onclick="normal()">일반</button>
+        <button type="button" onclick="satellite()">위성</button>
+    </div>
+    <div>
+        <button type="button" onclick="jejumarker()">제주도 마커 찍기</button>
+    </div>
+
 </body>
     <!--js-->
     <script src="../static/js/script.js"></script>
-    <!--네이버지도 스크립트-->
-    <script src="../static/js/geolocation.js"></script>
 </html>

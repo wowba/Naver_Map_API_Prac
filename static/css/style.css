@@ -7,5 +7,9 @@ body{
 }
 header{
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+#map {
+    width:700px;
+    height:700px;
 }
